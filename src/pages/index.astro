@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+console.log('hola');
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="My Playground">
 	<main>
 		<svg
 			class="astro-a"
@@ -34,8 +35,13 @@ import Card from '../components/Card.astro';
 			</defs>
 		</svg>
 		<h1>My <span class="text-gradient">Astro</span> site</h1>
+		<p>Just Testing</p>
 		<ul role="list" class="link-card-grid">
-			<p>Just Testing</p>
+			<Card
+				href="/about"
+				title='About'
+				body="About me."
+			/>
 		</ul>
 	</main>
 </Layout>
